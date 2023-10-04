@@ -52,6 +52,9 @@ for (let index = 0; index < cards.length; index++) {
         cards[index].innerHTML = makeSpan(index);
         cards[index].classList.add("selected");
         testPair();
+        setTimeout(() => {
+            testWin();
+        },500);
     })
 }
 
@@ -60,3 +63,6 @@ let makeSpan = (i) => {
 }
 
 
+function UjraTolt(){
+    window.location.reload();
+}
